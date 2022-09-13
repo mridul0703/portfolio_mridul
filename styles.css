@@ -7,24 +7,20 @@ html {
 	box-sizing: inherit;
 }
 body {
-	font-family: "Caveat", cursive;
+	font-family: "Tiro Bangla", serif;
+	font-size: large;
 	margin: 0 auto;
 	padding: 0;
-	margin: 0;
 }
 h2 {
-	font-family: "Tangerine", cursive;
-	font-size: 60px;
-	font-weight: 900px;
+	font-family: "Tiro Devanagari Hindi", serif;
+	font-size: 50px;
 	padding: 10px 0;
 	margin: 0;
 }
 h3 {
-	font-family: "Caveat", cursive;
-	/* font-family: "Dancing Script", cursive; */
-	/* font-family: "Montserrat", sans-serif; */
+	font-family: "Noto Serif Georgian", serif;
 	font-size: 30px;
-	font-weight: 900px;
 	padding: 10px 0;
 	margin: 0;
 }
@@ -39,7 +35,7 @@ h3 {
 	max-width: 800px;
 	width: 80%;
 	margin: 0 auto;
-	padding: 60px 0;
+	padding: 120px 0;
 }
 .intro h2 {
 	font-size: 110px;
@@ -60,15 +56,15 @@ h3 {
 	margin: 0 auto;
 	padding: 60px 0;
 }
-.experience {
+/* .experience {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	column-gap: 20px;
-}
+} */
 /* <!---------------------------- Education -------------------------------> */
 
 .wrap-education {
-	background-image: url(education.jpg);
+	background-image: url(../personal/education.jpg);
 	background-size: cover;
 	background-position: top right;
 	padding: 60px 0;
@@ -85,7 +81,6 @@ h3 {
 
 /* <!---------------------------- Footer - Contact  -------------------------------> */
 .wrap-contact {
-	margin: 0;
 	padding: 60px 0;
 	background: #343434;
 	color: #f7fff7;
@@ -93,22 +88,20 @@ h3 {
 }
 .contact {
 	max-width: 800px;
-	width: 90%;
+	width: 85%;
 	margin: 0 auto;
 	padding: 60px 0;
 }
 .contact h3 {
+	font-family: "Courgette", cursive;
 	font-size: 45px;
-	font-family: "Caveat", cursive;
 	font-weight: 400;
-	margin: 0;
-}
-.contact-list {
-	list-style-type: none;
 }
 .contact-list a {
 	padding: 15px;
-	display: inline-block;
+}
+a:link {
+	color: white;
 }
 a:visited {
 	color: white;
@@ -117,14 +110,22 @@ a:hover {
 	color: yellow;
 }
 /* <!------------------------------ End  ---------------------------------> */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 751px) {
+	.experience {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		column-gap: 50px;
+	}
 	.contact-list {
 		display: flex;
 		justify-content: center;
 	}
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 750px) and(min-width :400px) {
 	.contact-list a {
-		padding: 5px;
+		padding: 10px;
+		display: block;
 	}
+}
+@media screen and (max-width: 751px) {
 }
